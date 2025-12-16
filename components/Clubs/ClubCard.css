@@ -1,0 +1,49 @@
+.club-card {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* For the two-tone effect */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 
+Screenshot shows two tone:
+Top part: Blueish Purple
+Bottom part: Yellow/Gold with Text
+*/
+
+.club-card-top {
+    flex: 1;
+    /* 50% ish */
+    background: #4c46d3;
+    /* Purple */
+    background: linear-gradient(to bottom, #564ecc, #3d3799);
+}
+
+.club-card-content {
+    flex: 1;
+    /* 50% */
+    background: #F2C94C;
+    /* Gold/Yellow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.club-name {
+    color: #000;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+}

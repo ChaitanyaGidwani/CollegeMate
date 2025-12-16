@@ -1,0 +1,110 @@
+.chart-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 1.5rem;
+    grid-column: span 8;
+    /* Takes up main space */
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.chart-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.chart-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.chart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-btn {
+    background: #3b82f6;
+    /* Blueish */
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.icon-btn-small {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.chart-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chart-container {
+    position: relative;
+    width: 50%;
+    height: 250px;
+}
+
+.chart-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.chart-percent {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F2C94C;
+    /* Goldish match */
+}
+
+.chart-legend {
+    display: flex;
+    gap: 20px;
+    /* If chart is left, legend right or bottom. Screenshot shows legend at bottom, chart fills space. */
+    /* Re-adjusting layout to match screenshot: Chart takes left, large text right? No, text is center. Legend is bottom. */
+    /* Adapting basic flex layout */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.legend-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: lowercase;
+}

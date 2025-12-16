@@ -1,0 +1,83 @@
+.gpt-widget {
+    background: #191c24;
+    /* Darker card */
+    border-radius: 20px;
+    padding: 1.5rem;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gpt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.gpt-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.gpt-body {
+    flex: 1;
+}
+
+.gpt-message {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.gpt-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.gpt-text p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.gpt-version {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.gpt-input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.gpt-input {
+    flex: 1;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-family: var(--font-body);
+}
+
+.gpt-input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.gpt-send-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}

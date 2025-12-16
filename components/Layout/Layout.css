@@ -1,0 +1,15 @@
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 260px;
+    /* Width of sidebar */
+    padding: 2rem;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}

@@ -1,0 +1,52 @@
+.dashboard-page {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.charts-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    /* Ensure height matching if needed, though card content drives it */
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .charts-row {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-card,
+    .gpt-widget {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+}

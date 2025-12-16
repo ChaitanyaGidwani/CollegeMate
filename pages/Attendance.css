@@ -1,0 +1,49 @@
+.attendance-page {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.attendance-banner {
+    background: linear-gradient(to right, #6c5dd3, #4c46d3);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(108, 93, 211, 0.4);
+}
+
+.banner-chart {
+    width: 150px;
+    height: 150px;
+}
+
+.banner-stats {
+    display: flex;
+    gap: 4rem;
+}
+
+.banner-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.banner-stat-item .stat-label {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.banner-stat-item .stat-value {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}

@@ -1,0 +1,51 @@
+.subject-card {
+    background: var(--bg-card);
+    /* Purple/Blue dark card */
+    background: linear-gradient(135deg, #4c46d3 0%, #2d1b69 100%);
+    /* Match the screenshot gradient */
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 120px;
+    transition: transform 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+}
+
+.subject-chart-wrapper {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.subject-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.subject-rate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.trend-icon {
+    color: #fff;
+}
+
+.subject-title {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
